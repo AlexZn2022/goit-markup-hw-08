@@ -1,0 +1,143 @@
+.form-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $--main-title-color;
+    }
+    
+    .label{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $--main-text-color;
+    .label-name{
+      display: block;
+    margin-bottom: 4px;
+    }
+
+    }
+      
+    .form-input{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: transform;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: $--hover-animation;
+  
+    &:hover,
+    &:focus,
+    &:hover ~.form-icon,
+    &:focus ~.form-icon,
+    .form-icon:hover,
+    .form-icon:focus{
+    cursor: pointer;
+    border-color: $--active-main-color;
+    fill: $--active-main-color;
+    }
+  }
+
+    .label-feadback{
+    margin-bottom: 20px;
+    }
+    
+    .form-list,
+    .form-list-item{
+      margin-bottom: 10px;
+    }
+    
+ 
+    
+    .modal-close:hover .modal-close-icon,
+    .modal-close:focus .modal-close-icon{
+      fill: $--active-main-color;
+    }
+    
+    
+    .feadback{
+      resize: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      padding: 12px 16px;
+      width:100%;
+      height: 120px;
+
+      &::placeholder{
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+      }
+
+      &:hover,
+      &:focus{
+        cursor: pointer;
+        border-color: $--active-main-color;
+      }
+
+    }
+    
+    .agreement{
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+    }
+    
+    .agreement-checkbox{
+      display:inline-block;
+      position: absolute;
+      border: 2px solid $--main-title-color;
+      background-color: transparent;
+      width: 16px;
+      height: 15px;
+      border-radius: 2px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: transform 250ms $--hover-animation;
+      }
+      
+      .checkbox:checked + .agreement-checkbox{
+      border-color: $--active-main-color;
+      background-color: $--active-main-color;
+      background-image: url('../images/icon-checkbox-agree.svg');
+      }
+      
+    
+    .agreement-link{
+    color: $--accent-color;
+    text-decoration: underline;
+    }
+    
+    .input-container{
+    position: relative;
+    }
+    
+    .form-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    transition: transform;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $--hover-animation;}
+    
+    .checkbox{
+    appearance: none;
+    }
+    
+    .agreement-text{
+      margin-left: 24px;
+      }
+    
