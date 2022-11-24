@@ -1,6 +1,6 @@
 
 
-&__title {
+.client__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.16;
@@ -11,7 +11,7 @@
      font-size: 36px;*/
 }
 
-&__list {
+.client__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -19,11 +19,11 @@
   gap: 30px;
 }
 
-&__item {
+.client__item {
   display: flex;
   }
 
-  &__icon {
+  .client__icon {
     fill: currentColor;
     width: 106px;
     height: 60px;

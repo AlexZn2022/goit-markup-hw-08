@@ -1,4 +1,7 @@
 
+.footer{
+background-color: $--dark-background-color;}
+
 .footer-container {
     display: inline-block;
     align-items: center;
@@ -6,9 +9,9 @@
     flex-direction: column;
     width: 100%;
     padding: 60px 121px;
-    background-color: $--dark-background-color;
-  }
+     }
   
+     
   .footer__list-title {
     font-weight: 700;
     font-size: 14px;
@@ -37,12 +40,12 @@
     &:active{
       color: $--accent-color;
     }
-
-    &--white {
+  }
+    .address__link--white {
       line-height: 1.71;
       color: $--white-text-color; 
     }
-  }
+  
 
   .address__list {
     display: block;
@@ -153,17 +156,30 @@
    margin-left: 10px;}
 
 
-   @include desktop {
-   .footer-container {    
-    display: flex;
-    align-items: baseline;
-    padding: 60px 214px;  
-  }
+  @include desktop {
 
-    .footer__list {
-    display: flex;
-    margin-left: 70px;
-    padding-bottom: 9px;}
+    .footer-container {    
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: baseline;
+      padding: 60px 214px;  
+    }
+
+.footer__logo{
+    display: block;
+    text-align: start;
+}
+
+.address__link--white {
+display: flex;
+width: 207px;
+}
+
+   .footer__list {
+   display: flex;
+   margin-left: 70px;
+   padding-bottom: 9px;}
 
   .footer__form {
   display: flex;
@@ -171,4 +187,68 @@
 
   .footer-form-button{
   margin-left: 12px;}
+
+.address__list{
+  margin-bottom: 0;
+  text-align: start;
+
+  .address__list & {
+    display: block;
+      padding-top: 0;
+      padding-bottom: 9px;}
 }
+ 
+    .footer__list-title {
+   display: flex;
+    }
+    
+    .footer__list {
+      display: flex;
+      flex-direction: column;
+      margin-left: 70px;
+      margin-bottom: 0;
+
+      &.social__link:hover,
+      &.social__link:focus {
+        background-color: $--active-main-color;
+      }
+      
+      &.social__icon {
+        fill: $--white-text-color;
+      }
+    }
+    
+    .footer-form{
+      margin-left: 94px;}
+
+      .footer-form__title{
+      justify-content: flex-start;
+      }
+
+      .footer-form__label{
+      flex-wrap: nowrap;
+      align-items: baseline;
+      }
+
+      .footer-form__button{
+      margin-left: 12px;
+      }
+      
+  }
+
+
+
+
+
+
+
+
+  
+
+
+   
+
+      
+ 
+
+    
