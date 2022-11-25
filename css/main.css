@@ -110,7 +110,6 @@ ul {
 .logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 92px;
 }
 
 .logo {
@@ -122,6 +121,17 @@ ul {
   display: inline-block;
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 28px;
+    margin-right: 93px;
+  }
+}
 
 .logo__text--black {
   color: #000000;
@@ -129,6 +139,10 @@ ul {
 
 .header__container {
   position: relative;
+}
+
+.menu {
+  display: none;
 }
 
 .header-menu {
@@ -226,18 +240,12 @@ ul {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
-  .menu {
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
     flex-direction: column;
     margin-left: 90px;
-    gap: 10px;
-    padding-top: 21px;
+    padding-top: 11px;
   }
   .menu {
     display: flex;
@@ -245,7 +253,7 @@ ul {
 }
 .contacts__link {
   padding-bottom: 0;
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -253,34 +261,43 @@ ul {
     display: flex;
   }
   .contacts {
-    margin-left: 300px;
+    flex-direction: row;
+    margin-left: 290px;
+    padding-top: 0;
+  }
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
-/*DESCTOP STYLE
-
-.hero{
-    padding-top: 200px;
-    padding-bottom: 200px;}
-
-    .hero__title{
-     font-size: 44px;}
-*/
 .hero {
   text-align: center;
   padding: 118px 60px;
   background: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-img.jpg);
-  width: 100%;
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
   font-family: "Roboto";
   font-weight: 900;
+  max-width: 360px;
   font-size: 21px;
   text-transform: uppercase;
   margin: 0 auto;
@@ -288,11 +305,16 @@ ul {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    max-width: 696px;
+  }
+}
 
 .hero__button {
   margin: 0 auto;
-  padding: 10px 32px;
-  min-width: 213px;
+  padding: 10px 24px;
   margin-top: 30px;
   background-color: #2196f3;
   color: #ffffff;
@@ -442,6 +464,11 @@ ul {
   margin-top: 0;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+  }
+}
 
 .team__list {
   display: flex;
@@ -525,8 +552,12 @@ ul {
   text-align: center;
   color: #212121;
   margin-bottom: 30px;
-  /* margin-bottom: 50px;
-  font-size: 36px;*/
+}
+@media screen and (min-width: 1200px) {
+  .client__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .client__list {

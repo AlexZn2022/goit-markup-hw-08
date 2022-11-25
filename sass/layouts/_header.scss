@@ -8,7 +8,7 @@
      .logo {
       padding-top: 24px;
       padding-bottom: 24px;
-      margin-right: 92px;
+     
     }
 
   .logo {
@@ -19,6 +19,15 @@
     line-height: 1.19;
     display: inline-block;
     color: $--accent-color;
+
+   @include tablet{
+   margin-right: 88px;
+   }
+
+    @include desktop{
+    font-size: 28px;
+    margin-right: 93px;
+    }
   }
   
   .logo__text--black {
@@ -28,6 +37,9 @@
   .header__container{
   position: relative;
   }
+
+  .menu{
+    display: none;}
 
   .header-menu{
     position: absolute;
@@ -139,10 +151,8 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
     fill: currentColor;
   }
   
-  @include mobile {
-    .menu{
-      display: none;}
-  }
+   
+
 
 
 @include tablet{
@@ -151,8 +161,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
 display: flex;
 flex-direction: column;
 margin-left: 90px;
-gap: 10px;
-padding-top: 21px;
+padding-top: 11px;
 }
 
 .menu{
@@ -161,15 +170,20 @@ display: flex;
 }
 .contacts__link{
 padding-bottom: 0;
-padding-top: 0;
+padding-top: 10px;
 }
-
-
 
   @include desktop{
     .menu{
   display: flex;}
+
   .contacts{
-  margin-left: 300px;
+  flex-direction: row;
+  margin-left: 290px;
+  padding-top: 0;}
+
+  .contacts__link{
+  padding-top: 32px;
+  padding-bottom: 32px;
   }
   }

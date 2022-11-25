@@ -26,6 +26,10 @@
     color: $--main-title-color;
     margin-top: 0;
     margin-bottom: 30px;
+
+    @include desktop{
+      font-size:36px;
+    }
  
   }
   
