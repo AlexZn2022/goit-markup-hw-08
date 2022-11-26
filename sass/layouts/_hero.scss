@@ -1,31 +1,43 @@
 .hero {
+  max-width: 100%;
+ }
+
+ .hero-container{
     text-align: center;
     padding: 118px 60px;
-
     background: $--dark-background-color;
-    background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/background-img.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-
-@include tablet{
-  padding: 118px 200px;
+   background-image: $--bkg-gradient, url(../images/bkg-img/hero-bg-desk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;}
+    @include retina{
+      background-image:$--bkg-gradient,url(../images/bkg-img/hero-bg-desk-2x.jpg);
+    }
+ 
+    @include tablet{
+      padding: 118px 200px;
+      background-image: $--bkg-gradient, url(../images/bkg-img/img-bkg-tab.jpg);
+   @include retina {
+        background-image:$--bkg-gradient,url(../images/bkg-img/img-bkg-tab-2x.jpg);
+  }
 }
+  
+     @include desktop{
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: 
+      $--bkg-gradient,
+      url(../images/bkg-img/hero-bg-desk.jpg);
+      
+      @include retina {
+        background-image:$--bkg-gradient,url(../images/bkg-img/hero-bg-desk-2x.jpg);
+      }
+      }
 
-  @include desktop{
-  padding-top: 200px;
-  padding-bottom: 200px;
-  }
-  }
 
-  .hero__title {
+    .hero__title {
     font-family: "Roboto";
     font-weight: 900;
     max-width: 360px;
@@ -41,8 +53,7 @@
         font-size: 44px;
         max-width: 696px;
     }
-   
-  }
+     }
   
   .hero__button {
     margin: 0 auto;
@@ -56,6 +67,4 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       background-color: $--active-main-color;
     }
-
   }
-  
