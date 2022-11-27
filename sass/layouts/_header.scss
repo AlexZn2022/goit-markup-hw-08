@@ -2,14 +2,11 @@
   width: 100%;
     border-width: 0 0 1px 0;
     border-color: $--header-line-color;
-    border-style: solid;
-        }
+    border-style: solid;}
   
      .logo {
       padding-top: 24px;
-      padding-bottom: 24px;
-     
-    }
+      padding-bottom: 24px;}
 
   .logo {
     font-family: "Raleway", sans-serif;
@@ -21,22 +18,18 @@
     color: $--accent-color;
 
    @include tablet{
-   margin-right: 88px;
-   }
+   margin-right: 88px;}
 
     @include desktop{
     font-size: 28px;
-    margin-right: 93px;
-    }
+    margin-right: 93px;}
   }
   
   .logo__text--black {
-    color: $--dark-text-color;
-  }
+    color: $--dark-text-color;}
   
   .header__container{
-  position: relative;
-  }
+  position: relative;}
 
   .menu{
     display: none;}
@@ -50,23 +43,18 @@
     background: #FFFFFF;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
 0px 2px 4px rgba(0, 0, 0, 0.08), 
-0px 1px 3px rgba(0, 0, 0, 0.16);
-  }
+0px 1px 3px rgba(0, 0, 0, 0.16);}
 
   .header__container,
   .navigation,
-  .navigation__list
-   {
-    display: flex;
-  }
+  .navigation__list {
+    display: flex;}
   
    .navigation__list .navigation__item:last-child {
-    margin-right: 0;
-  }
+    margin-right: 0;}
   
   .navigation__item {
-    margin-right: 50px;
-  }
+    margin-right: 50px;}
   
   .navigation__link {
     position: relative;
@@ -84,15 +72,10 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
 
     &:hover,
     &:focus {
-      color: $--accent-color;
-    }
+      color: $--accent-color;}
   }
   
-  /*.address__link {
-    padding-top: 32px;
-    padding-bottom: 32px;}*/
-  
-  .current {
+   .current {
     color: $--accent-color;
     position: relative;
 
@@ -103,8 +86,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
       height: 4px;
       background-color: $--active-main-color;
       border-radius: 2px;
-      bottom: 0;
-    }
+      bottom: 0;}
   }
    
   .contacts__link {
@@ -124,51 +106,38 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
 
     &:hover,
     &:focus {
-      color: $--accent-color;
-    }
+      color: $--accent-color;}
 
     &:hover .contacts__icon,
     &:focus .contacts__icon {
-      fill: $--accent-color;
-    }
-
+      fill: $--accent-color;}
   }
   
   .contacts {
     display: flex;
-    margin-left: auto;
-  }
+    margin-left: auto;}
   
   .contacts__item:first-child {
-    margin-right: 50px;
-  }
+    margin-right: 50px;}
   
   .contacts__icon {
     margin-right: 10px;
-    fill: currentColor;
-  }
+    fill: currentColor;}
   
-   
-
-
-
 @include tablet{
 
 .contacts{
 display: flex;
 flex-direction: column;
 margin-left: 90px;
-padding-top: 11px;
-}
+padding-top: 11px;}
 
 .menu{
-display: flex;
-}
+display: flex;}
 }
 .contacts__link{
 padding-bottom: 0;
-padding-top: 10px;
-}
+padding-top: 10px;}
 
   @include desktop{
     .menu{
@@ -181,6 +150,5 @@ padding-top: 10px;
 
   .contacts__link{
   padding-top: 32px;
-  padding-bottom: 32px;
-  }
+  padding-bottom: 32px;}
   }
