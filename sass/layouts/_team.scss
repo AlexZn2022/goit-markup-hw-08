@@ -1,15 +1,4 @@
 
-/*DESCTOP STYLE
-
-.team{
-   padding-top: 94px;
-  padding-bottom: 94px;}
-.team__title{
-   font-size: 36px;
-    margin-bottom: 50px;}  
-
-*/
-
 
 .team {
     background: #f5f4fa;
@@ -55,7 +44,6 @@
     @include desktop {
       width: calc((100% - 90px) / 4);
     }
-
   }
   
   .team__name {

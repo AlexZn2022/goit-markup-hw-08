@@ -10,18 +10,8 @@ padding: 12px 8px;
 background-color: transparent;
 
 
-.icon-cross{
-    display: none;
-    }
 
-   
-&.is-open  .icon-cross{
-    display: block;}
-
-&.is-open .icon-menu{
-display: none;
-}
-
+  
 @include tablet{
 display: none;
 }
@@ -29,22 +19,42 @@ display: none;
 @include desktop{
 display: none;
 }
-
 }
 
+
+.mobile__icon:hover,
+.mobile__icon:focus{
+fill: $--accent-color;
+}
+
+
+.mobile__icon{
+transition: transform;
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: $--hover-animation;}
+
+
+.mobile__button{
+position: absolute;
+margin: 0 auto;
+background-color: transparent;
+ top: 10px;
+ right: 15px;  
+}
+  
+  
 
 .mobile__menu{
-display: none;
-position: absolute;
-top:100%;
-left: 0;
-max-width: 100%;
-padding: 48px 83px 134px 40px;
-background-color: $--main-background-color;
-
-&.is-open{
 display: block;
-}
+position: fixed;
+top:0;
+left: 0;
+width: 100%;
+padding: 48px 83px 48px 40px;
+background-color: $--main-background-color;
+z-index: 1;
+transition: transform 250ms $--hover-animation;
 }
 
 

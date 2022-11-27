@@ -18,24 +18,27 @@
    <header class="header">
       <div class="container header__container">
          <a href="index.html" class="link logo">Web<span class="logo__text--black">Studio</a>
-          <button type="button" class=" button menu-toggle js-open-menu" 
+          <button type="button" class=" button menu-toggle "data-menu-open 
           aria-expanded="false"
           aria-controls="mobile__menu"> 
             <svg height="40" width="40">
-              <use href="./images/svg-img.svg#icon-menu-mobile" class="icon-menu"></use>
-             <use href="./images/svg-img.svg#icon-modal" class="icon-cross"></use>
-            </svg>
+              <use href="./images/svg-img.svg#icon-menu-mobile" class="mobile__icon icon-menu"></use>
+             </svg>
         </button>
         
-
-        <div class="mobile__menu">
+        <div class="container">
+        <div class="mobile__menu is-hidden" data-menu>
+          <button class="button mobile__button" data-menu-close><svg height="40" width="40">
+            <use href="./images/svg-img.svg#icon-modal" class="mobile__icon icon-cross" ></use>
+          </svg></button>
+          
           <ul class="list menu__list">
             <li class="menu__item"><a href="index.html" class="link menu__link">Студія</a></li>
             <li class="menu__item"><a href="./portfolio.html" class="link menu__link">Портфоліо</a></li>
             <li class="menu__item"> <a href="" class="link menu__link">Контакти</a></li>
            </ul>
-           <ul class="menu-contacts">
-            <li class="menu-contacts__item"><a href="tel:+380961111111" class="link menu-contacts__link menu-contacts__link--blue"> 
+           <ul class="menu__item menu-contacts">
+            <li class="menu__item menu-contacts__item"><a href="tel:+380961111111" class="link menu-contacts__link menu-contacts__link--blue"> 
               +38 096 111 11 11</a></li>
             <li class="menu-contacts__item"><a href="mailto:info@devstudio.com" class="link menu-contacts__link"> 
               info@devstudio.com</a></li>
@@ -67,6 +70,7 @@
       </ul>
       </div>
     </div>
+  </div>
     <!---
 <div class="header__menu">
   <nav class="navigation">
@@ -152,7 +156,7 @@
         </div>
         </section>
 
-<!--SECTION-WHAT-WE-DO
+<!--SECTION-WHAT-WE-DO-->
         
           <section class="section what-we-do">
              <div class="container"> 
@@ -160,8 +164,13 @@
         <ul class="what-we-do__list">
           <li>
             <div class="overlay">
-               <img
-              src="images/work-process-1.jpg"
+             
+
+               
+               <img srcset="./images/what-we-do/work-process-1.jpg 1x, 
+                            ./images/what-we-do/work-process-1-2x.jpg 2x"
+               
+              src="./images/what-we-do/work-process-1.jpg"
               alt="Процес розробки"
               width="370"
             />
@@ -171,8 +180,9 @@
            
           <li>
             <div class="overlay">
-            <img
-              src="images/work-process-2.jpg"
+            <img srcset="./images/what-we-do/work-process-2.jpg 1x, 
+                        ../images/what-we-do/work-process-2-2x.jpg 2x"
+              src="./images/what-we-do/work-process-2.jpg"
               alt="Процес роботи з макетом мобыльного застосунку"
               width="370"/>
               <p class="overlay__title">мобільні додатки</p>
@@ -180,8 +190,9 @@
               </li>
           <li>
              <div class="overlay">
-             <img
-              src="images/work-process-3.jpg"
+             <img srcset="./images/what-we-do/work-process-3.jpg 1x, 
+                          ./images/what-we-do/work-process-3-2x.jpg 2x"
+              src="./images/what-we-do/work-process-3.jpg"
               alt="Процес створення дизайну сайту"
               width="370"/>
               <p class="overlay__title">дизайнерські рішення</p>
@@ -189,7 +200,7 @@
           </li>
         </ul>
         </div>
-       </section>-->
+       </section>
 
 <!--SECTION TEAM-->
 
@@ -198,7 +209,24 @@
          <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img src="images/ihor.jpg" alt="Ігор Дем'яненко" width="270"/>
+            <picture>
+              <source srcset="./images/team-img/ihor-desk.jpg 1x, 
+                              ./images/team-img/ihor-desk-2x.jpg 2x"
+                              media="min-width: 1200px">
+              <source srcset="./images/team-img/ihor-tab.jpg 1x, 
+              ./images/team-img/ihor-tab-2x.jpg 2x"
+              media="min-width: 768px">
+              <source srcset="./images/team-img/ihor-mob.jpg 1x, 
+              ./images/team-img/ihor-mob-2x.jpg 2x"
+              media="min-width: 320px">
+              <img 
+            src="./images/team-img/ihor-mob.jpg" 
+            alt="Ігор Дем'яненко" width="450"/>
+            </picture>
+            
+
+
+
             <div class="team__description"><h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__position">Product Designer</p>
         
@@ -219,7 +247,28 @@
             </div>
          
           <li class="team__item">
-            <img src="images/olga.jpg" alt="Ольга Рєпіна" width="270" />
+
+
+
+            <picture>
+              <source srcset="./images/team-img/olga-desk.jpg 1x, 
+                              ./images/team-img/olga-desk-2x.jpg 2x"
+                              media="min-width: 1200px">
+              <source srcset="./images/team-img/olga-tab.jpg 1x, 
+              ./images/team-img/olga-tab-2x.jpg 2x"
+              media="min-width: 768px">
+              <source srcset="./images/team-img/olga-mob.jpg 1x, 
+              ./images/team-img/olga-mob-2x.jpg 2x"
+              media="min-width: 320px">
+              <img 
+            src="./images/team-img/olga-mob.jpg" 
+            alt="Ольга Рєпіна" width="450" />
+            </picture>
+            
+           
+           
+           
+           
             <div class="team__description"><h3 class="team__name">Ольга Рєпіна</h3>
             <p class="team__position">Frontend Developer</p>
               <ul class="social__list">
@@ -239,7 +288,25 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="images/mikola.jpg" alt="Микола Тарасов" width="270" />
+
+            <picture>
+              <source srcset="./images/team-img/mikola-desk.jpg 1x, 
+                              ./images/team-img/mikola-desk-2x.jpg 2x"
+                              media="min-width: 1200px">
+              <source srcset="./images/team-img/mikola-tab.jpg 1x, 
+              ./images/team-img/mikola-tab-2x.jpg 2x"
+              media="min-width: 768px">
+              <source srcset="./images/team-img/mikola-mob.jpg 1x, 
+              ./images/team-img/mikola-mob-2x.jpg 2x"
+              media="min-width: 320px">
+              <img 
+              src="./images/team-img/mikola-mob.jpg" 
+            alt="Микола Тарасов" width="450" />
+            </picture>
+
+                 
+           
+           
             <div class="team__description"><h3 class="team__name">Микола Тарасов</h3>
             <p class="team__position">Marketing</p>
               <ul class="social__list">
@@ -259,7 +326,22 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="images/mihailo.jpg" alt="Михайло Єрмаков" width="270" />
+
+
+            <source srcset="./images/team-img/mihailo-desk.jpg 1x, 
+            ./images/team-img/mihailo-desk-2x.jpg 2x"
+            media="min-width: 1200px">
+<source srcset="./images/team-img/mihailo-tab.jpg 1x, 
+./images/team-img/mihailo-tab-2x.jpg 2x"
+media="min-width: 768px">
+<source srcset="./images/team-img/mihailo-mob.jpg 1x, 
+./images/team-img/mihailo-mob-2x.jpg 2x"
+media="min-width: 320px">
+<img 
+src="./images/team-img/mihailo-mob.jpg"
+alt="Михайло Єрмаков" width="450" />
+</picture>    
+                     
             <div class="team__description"><h3 class="team__name">Михайло Єрмаков</h3>
             <p class="team__position">UI Designer</p>
               <ul class="social__list">

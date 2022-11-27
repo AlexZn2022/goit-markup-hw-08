@@ -1,6 +1,11 @@
 
 .what-we-do {
     padding-top: 0;
+    display: none;
+
+    @include desktop{
+    display: block;
+    }
   }
   
   .what-we-do__title {
