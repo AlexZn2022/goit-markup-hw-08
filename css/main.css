@@ -558,15 +558,11 @@ ul {
 
 .what-we-do {
   padding-top: 0;
+  display: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .what-we-do {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .what-we-do {
-    display: none;
+    display: block;
   }
 }
 

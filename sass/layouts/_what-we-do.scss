@@ -1,15 +1,13 @@
 
 .what-we-do {
     padding-top: 0;
+    display: none;
    
 
-@include mobile{
-  display: none;
+@include desktop{
+  display: block;
 }
 
-    @include tablet{
-      display: none;
-    }
   }
   
   .what-we-do__title {
