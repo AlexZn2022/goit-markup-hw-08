@@ -266,7 +266,7 @@ ul {
   }
   .contacts {
     flex-direction: row;
-    margin-left: 290px;
+    margin-left: 260px;
     padding-top: 0;
   }
   .contacts__link {
