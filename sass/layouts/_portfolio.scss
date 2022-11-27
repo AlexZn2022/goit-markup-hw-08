@@ -58,6 +58,9 @@
     flex-wrap: wrap;
     margin-top: 56px;
 
+    @include tablet {
+      flex-direction: row;}
+
     @include desktop{
     flex-direction: row;}
   }
