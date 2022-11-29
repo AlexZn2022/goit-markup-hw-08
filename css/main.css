@@ -172,9 +172,8 @@ ul {
   display: flex;
   position: relative;
   margin: 0 auto;
-  position: relative;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .navigation__list .navigation__item:last-child {
