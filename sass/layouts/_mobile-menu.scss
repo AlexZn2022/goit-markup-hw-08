@@ -1,8 +1,4 @@
 
-.header__container{
-position: relative;
-}
-
 .menu-toggle{
 display: flex;
 align-items: center;
@@ -51,6 +47,7 @@ position: fixed;
 top:0;
 left: 0;
 width: 100%;
+height: 100%;
 padding: 48px 83px 48px 40px;
 background-color: $--main-background-color;
 z-index: 1;
