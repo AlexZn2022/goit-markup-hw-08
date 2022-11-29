@@ -121,7 +121,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 88px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -139,10 +139,21 @@ ul {
 
 .header__container {
   position: relative;
+  margin: 0;
 }
 
 .menu {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+  }
 }
 
 .header-menu {
@@ -159,6 +170,7 @@ ul {
 .navigation,
 .navigation__list {
   display: flex;
+  margin: 0 auto;
 }
 
 .navigation__list .navigation__item:last-child {
@@ -210,8 +222,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -223,50 +233,21 @@ ul {
   fill: #2196f3;
 }
 
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts__item:first-child {
-  margin-right: 50px;
-}
-
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
-  .contacts {
-    display: flex;
-    flex-direction: column;
-    margin-left: 90px;
-    padding-top: 11px;
-  }
-  .menu {
-    display: flex;
-  }
+.contacts {
+  margin-left: auto;
+  margin-top: 21px;
 }
-.contacts__link {
-  padding-bottom: 0;
-  padding-top: 10px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: 90px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  .menu {
-    display: flex;
-  }
-  .contacts {
-    flex-direction: row;
-    margin-left: 260px;
-    padding-top: 0;
-  }
-  .contacts__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
 .header__container {
   position: relative;
 }
@@ -278,6 +259,7 @@ ul {
   margin-left: auto;
   padding: 12px 8px;
   background-color: transparent;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -367,6 +349,10 @@ ul {
 }
 .menu-contacts__link:hover, .menu-contacts__link:focus {
   color: #2196f3;
+}
+
+.contacts__item {
+  margin-bottom: 10px;
 }
 
 .menu-contacts__link--blue {
