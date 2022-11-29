@@ -4,7 +4,10 @@
   justify-content: center;}
 
   .feature__ikon {
-    padding: 25px 192px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -12,7 +15,9 @@
   
   
   .feature__title {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -20,6 +25,14 @@
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 10px;
+
+    @include tablet{
+    justify-content: start;
+    }
+
+    @include desktop{
+      justify-content: start;
+      }
 
     &--hidden {
       position: absolute;
@@ -62,10 +75,11 @@
 }
 
   .feature__paragraph {
+    width: 100%;
     line-height: 1.71;
     margin-top: 0;
     margin-bottom: 0;
-    width: 100%;
+    
     
     &:nth-child(3n + 1) {
       height: 72px;

@@ -4,8 +4,10 @@ position: relative;
 }
 
 .menu-toggle{
-display: inline-flex;
-margin: 0 0 0 260px;
+display: flex;
+align-items: center;
+justify-content: end;
+margin-left: auto;
 padding: 12px 8px;
 background-color: transparent;
 
@@ -37,10 +39,10 @@ transition-timing-function: $--hover-animation;}
 
 .mobile__button{
 position: absolute;
-margin: 0 auto;
 background-color: transparent;
  top: 10px;
- right: 15px;  
+ right: 15px; 
+ border: none; 
 }
   
   

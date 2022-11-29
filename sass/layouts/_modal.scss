@@ -23,8 +23,11 @@
 
   .modal{
     position: absolute;
-    width: 450px;
+    width: 95%;
+    height: 95%;
+    max-width: 495px;
     height: 609px;
+    overflow:scroll;
     left: 50%;
       top:50%;
      transform: translate(-50%, -50%) scaleY(1);
