@@ -67,7 +67,6 @@ ul {
 }
 
 .container {
-  position: relative;
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
@@ -111,7 +110,7 @@ ul {
 
 .logo {
   display: flex;
-  margin-right: auto;
+  margin-right: 88px;
   align-items: center;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -139,7 +138,7 @@ ul {
 }
 
 .menu {
-  display: none;
+  /*display: none;*/
 }
 @media screen and (min-width: 768px) {
   .menu {
@@ -152,28 +151,21 @@ ul {
   }
 }
 
-.header-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 480px;
-  height: 796px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-}
-
-.navigation,
+.navigation, .contacts,
 .navigation__list {
   display: flex;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .navigation, .contacts,
+.navigation__list {
+    margin-right: 33px;
+  }
+}
 
 .header__container {
   display: flex;
-  position: relative;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
 }
 
 .navigation__list .navigation__item:last-child {
@@ -242,12 +234,16 @@ ul {
 }
 
 .contacts {
-  margin-left: auto;
-  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    margin-left: 90px;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-left: 200px;
   }
 }
 
@@ -275,7 +271,7 @@ ul {
   fill: #2196f3;
 }
 
-.mobile__icon {
+.mobmenuile__icon {
   transition: transform;
   transition-property: fill;
   transition-duration: 250ms;
@@ -301,6 +297,16 @@ ul {
   background-color: #ffffff;
   z-index: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile__menu {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -385,12 +391,12 @@ ul {
 
 .hero-container {
   text-align: center;
+  height: 400px;
+  max-width: 1600px;
   padding-top: 118px;
-  padding-right: 60px;
   padding-bottom: 118px;
-  padding-left: 60px;
   background: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bkg-img/hero-bg-desk.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bkg-img/img-bkg-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -399,7 +405,7 @@ ul {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bkg-img/hero-bg-desk-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bkg-img/img-bkg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -415,8 +421,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .hero-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bkg-img/hero-bg-desk.jpg);
   }
 }
@@ -430,7 +436,7 @@ ul {
   font-family: "Roboto";
   font-weight: 900;
   max-width: 360px;
-  font-size: 21px;
+  font-size: 26px;
   text-transform: uppercase;
   margin: 0 auto;
   line-height: 1.36;
@@ -766,10 +772,11 @@ ul {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 60px 0;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
+    align-items: baseline;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -921,6 +928,11 @@ ul {
   padding-bottom: 15px;
   padding-left: 16px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {

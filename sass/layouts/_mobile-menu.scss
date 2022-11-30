@@ -23,7 +23,7 @@ fill: $--accent-color;
 }
 
 
-.mobile__icon{
+.mobmenuile__icon{
 transition: transform;
 transition-property: fill;
 transition-duration: 250ms;
@@ -51,9 +51,16 @@ padding: 48px 83px 48px 40px;
 background-color: $--main-background-color;
 z-index: 1;
 transition: transform 250ms $--hover-animation;
+
+@include tablet{
+display: none;
 }
 
+@include desktop{
+display: none;
+}
 
+}
 
 .menu__list{
 margin-bottom: 306px;

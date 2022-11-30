@@ -7,7 +7,7 @@
 
   .logo {
     display: flex;
-    margin-right: auto;
+    margin-right: 88px;
     align-items: center;
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -29,8 +29,10 @@
   .logo__text--black {
     color: $--dark-text-color;}
   
-  .menu{
-    display: none;
+  
+    
+   .menu{
+/*display: none;*/
 
     @include tablet{
       display: flex;}
@@ -39,29 +41,20 @@
     display: flex;}
   }
 
-  .header-menu{
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 480px;
-    height: 796px;
-    background: #FFFFFF;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
-0px 2px 4px rgba(0, 0, 0, 0.08), 
-0px 1px 3px rgba(0, 0, 0, 0.16);}
-
-  .navigation,
+  .navigation, .contacts,
   .navigation__list {
     display: flex;
-  margin: 0 auto;}
+  margin: 0 auto;
+
+@include tablet{
+    margin-right: 33px;
+}
+}
 
   .header__container
 {display: flex;
-  position: relative;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-}
+  align-items: baseline;
+ }
      
 
      
@@ -136,12 +129,17 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
 
 
 .contacts{
-  margin-left: auto;
-  margin-top: 21px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 
-  @include desktop{
-    margin-left: 90px;
-  }
+ @include desktop{
+flex-direction: row;
+align-items: center;
+gap: 40px;
+margin-left: 200px;
+ }
+
 }
    
    

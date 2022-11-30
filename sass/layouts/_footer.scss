@@ -1,16 +1,17 @@
-
 .footer{
-background-color: $--dark-background-color;}
+background-color: $--dark-background-color;
+}
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+   align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 60px 0;
+    padding: 0;
   
     @include tablet{
+      align-items: baseline;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -82,7 +83,7 @@ background-color: $--dark-background-color;}
     text-align: center;
     justify-content: center;
     margin-right: 0;
-
+    
 @include desktop{
     display: block;
     text-align: start;
@@ -151,9 +152,6 @@ background-color: $--dark-background-color;}
     }
     }
 
-
-
-
   
   .footer-form__input{
   width: 100%;
@@ -168,6 +166,10 @@ background-color: $--dark-background-color;}
   padding-bottom: 15px;
   padding-left: 16px;
   margin-bottom: 20px;
+
+  @include tablet{
+  width: 450px;
+  }
 
   @include desktop{
   width: 358px;
