@@ -20,6 +20,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+
+  @include desktop{
+  flex-wrap: nowrap;
+  }
 }
 
 .client__item {
