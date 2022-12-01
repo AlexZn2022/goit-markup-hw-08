@@ -397,7 +397,7 @@ ul {
   padding-bottom: 118px;
   background: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bkg-img/hero-mob.jpg);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
