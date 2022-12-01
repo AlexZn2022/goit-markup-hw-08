@@ -32,7 +32,7 @@
       flex-direction:column;
       background-image: 
       $--bkg-gradient,
-      url(../../images/bkg-img/hero-desk.jpg);}
+      url(../images/bkg-img/hero-desk.jpg);}
       
       @include retina {
         background-image:$--bkg-gradient,url(../images/bkg-img/hero-desk-2x.jpg);
