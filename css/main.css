@@ -851,6 +851,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .address__list {
     text-align: start;
+    margin-top: 0;
   }
 }
 
